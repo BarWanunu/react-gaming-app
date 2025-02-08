@@ -28,6 +28,7 @@ const useData = <T>(
         .then((res) => {
           setData(res.data.results);
           setLoading(false);
+          setError(false);
         })
         .catch((err) => {
           if (err instanceof CanceledError) return;
@@ -37,7 +38,7 @@ const useData = <T>(
 
       return () => controller.abort();
     },
-    deps ? [...deps] : []
+    deps ? [...deps, error] : [error]
   );
   return { data, error, isLoading };
 };
