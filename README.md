@@ -23,4 +23,4 @@ A React + TypeScript web application for exploring games, platforms, and genres.
 3. Create an API key from [rawg.io](https://rawg.io/apidocs). It is free.
 4. In the ```services``` folder under ```api-client.ts``` change the key to the one you got.
 5. Run with the command : ```npm run dev```
-6. The app will start at [http://localhost:5173/] by default.
+6. The app will start at [(http://localhost:5173/)] by default.
