@@ -10,17 +10,17 @@ A React + TypeScript web application for exploring games, platforms, and genres.
 - **Responsive Design:** Optimized for mobile and desktop users.
 
 ## Technologies Used
-- React – Frontend framework
-- TypeScript – Type safety for better maintainability
-- Vite – High-performance build tool
-- Chakra UI – Responsive UI components
-- Axios – Fetching game data from the API
-- React Icons – Icon library for platform icons
+- **React** – Frontend framework
+- **TypeScript** – Type safety for better maintainability
+- **Vite** – High-performance build tool
+- **Chakra UI** – Responsive UI components
+- **Axios** – Fetching game data from the API
+- **React Icons** – Icon library for platform icons
 
 ## Installation & Setup
 1. clone the repository : https://github.com/BarWanunu/react-project.git
 2. Install dependencies with ```npm install```
 3. Create an API key from [rawg.io](https://rawg.io/apidocs). It is free.
-4. In the services folder under ```api-client.ts``` change the key to the one you got.
+4. In the ```services``` folder under ```api-client.ts``` change the key to the one you got.
 5. Run with the command : ```npm run dev```
 6. The app will start at [http://localhost:5173/] by default.
