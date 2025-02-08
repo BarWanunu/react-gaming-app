@@ -31,9 +31,21 @@ const PlatformIConList = ({ platforms }: Props) => {
   };
   return (
     <>
-      <HStack marginY={1}>
+      <HStack
+        marginY={2.5}
+        alignItems={"center"}
+        spacing={{ sm: 5, md: 2, lg: 1, xl: 1 }}
+      >
         {platforms.map((platform) => (
-          <Icon as={iconMap[platform.slug]} color="gray.500" />
+          <Icon
+            as={iconMap[platform.slug]}
+            color="gray.500"
+            boxSize={
+              platform.slug === "nintendo"
+                ? { base: 10, xl: 5 }
+                : { base: 5, xl: 4 }
+            }
+          />
         ))}
       </HStack>
     </>
